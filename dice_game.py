@@ -98,12 +98,8 @@ def play(nrounds, ndice=2):
 def main():
 	welcome_banner()
 
-	################ EDIT 2 ################
-	# nrounds = int(raw_input('How many rounds shall we play: '))
-	# play(nrounds)
-	########################################
-
-	play(2) 
+	nrounds = int(raw_input('How many rounds shall we play: '))
+	play(nrounds)
 
 # Run the game!
 if __name__ == "__main__":
