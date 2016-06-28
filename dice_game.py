@@ -8,10 +8,10 @@ import random
 # Let's beat the machine!
 
 
- def welcome_banner():
-     print '-------------------------------------'
-     print '- - - Man vs. Machine Dice Game - - -'
-     print '-------------------------------------\n'
+def welcome_banner():
+	print '-------------------------------------'
+	print '- - - Man vs. Machine Dice Game - - -'
+	print '-------------------------------------\n'
 
 ########################################
 
@@ -96,9 +96,7 @@ def play(nrounds, ndice=2):
 
 
 def main():
-	################ EDIT 1 ################
-	# welcome_banner()
-	########################################
+	welcome_banner()
 
 	################ EDIT 2 ################
 	# nrounds = int(raw_input('How many rounds shall we play: '))
