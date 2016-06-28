@@ -13,8 +13,6 @@ def welcome_banner():
 	print '- - - Man vs. Machine Dice Game - - -'
 	print '-------------------------------------\n'
 
-########################################
-
 def roll_dice_and_compute_sum(ndice):
 	return sum([random.randint(1, 6) \
 		for i in range(ndice)])
@@ -64,29 +62,19 @@ def play(nrounds, ndice=2):
 		if player_capital == 0 or computer_capital == 0:
 			break
 
-	if computer_capital > player_capital:
-		winner = 'Machine'
-	else:
-		winner = 'You'
-	print winner, 'won!'
-
-	################ EDIT 4 ################
-	# Remove the rows above!
-	# if computer_capital < player_capital:
-	# 	print 'You Win!'
+	if computer_capital < player_capital:
+		print 'You Win!'
 	
-	# elif computer_capital > player_capital:
-	# 	print 'Machine Wins!'
+	elif computer_capital > player_capital:
+		print 'Machine Wins!'
 
-	# else:
-	# 	print 'Tie!'
+	else:
+		print 'Tie!'
 
-	# ans = raw_input('Do you want a rematch (y/n): ')
-	# if ans == 'y':
-	# 	print "\n - Let's go again! - \n"
-	# 	main()
-	########################################
-
+	ans = raw_input('Do you want a rematch (y/n): ')
+	if ans == 'y':
+	 	print "\n - Let's go again! - \n"
+	 	main()
 
 def main():
 	welcome_banner()
